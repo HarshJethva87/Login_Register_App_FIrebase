@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".SignIn">
+
+    <ImageView
+        android:id="@+id/chaticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+
+        <!--        Email TextView-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:layout_margin="10dp"
+            app:endIconMode="clear_text"
+            style= "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sinemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--        Password Textview-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:layout_margin="10dp"
+            app:passwordToggleEnabled="true"
+            style= "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sinpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_margin="10dp"/>
+
+
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/ThemeColor"
+            android:text="@string/sign_in"
+            app:cornerRadius="10dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/signupoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_signup_option"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/googlebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/google"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/google_signup_desc"
+            android:layout_margin="10dp"/>
+
+        <ImageButton
+            android:id="@+id/facebookbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/facebook"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/facebook_signup_desc"
+            android:layout_margin="10dp"/>
+
+        <ImageButton
+            android:id="@+id/phoneoptbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/phone_otp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/phoneotp_signup_desc"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/newusertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_user_text"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>
