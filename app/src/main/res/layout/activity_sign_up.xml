@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/chaticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/icon_desc" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+<!--        Username Textview-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            app:endIconMode="clear_text"
+            android:layout_margin="10dp"
+            style= "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--        Email TextView-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:layout_margin="10dp"
+            app:endIconMode="clear_text"
+            style= "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/supemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--        Password Textview-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:layout_margin="10dp"
+            app:passwordToggleEnabled="true"
+            style= "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/suppassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/sign_up"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/ThemeColor"
+            app:cornerRadius="10dp"/>
+
+
+        <TextView
+            android:id="@+id/oldusertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/old_user_text"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

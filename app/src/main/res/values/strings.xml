@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyTalks</string>
+    <string name="google_signup_desc">Google SignUp</string>
+    <string name="facebook_signup_desc">Facebook SignUp</string>
+    <string name="phoneotp_signup_desc">PhoneOtp SignUp</string>
+    <string name="new_user_text">NEW TO THIS APP ? SIGN UP</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="old_user_text">ALREADY ACCOUNT ? SIGN IN</string>
+    <string name="or_signup_option">OR CONNECT WITH</string>
+    <string name="icon_desc">icon_desc</string>
+    <string name="logout_menu">Logout</string>
+    <string name="settings_menu">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
